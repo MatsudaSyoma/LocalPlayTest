@@ -4,6 +4,7 @@
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 
+
 // Sets default values
 ACPP_MyCharacter::ACPP_MyCharacter()
 {
@@ -22,6 +23,9 @@ ACPP_MyCharacter::ACPP_MyCharacter()
 
 	PlayerSceneCapture = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("PlayerSceneCapture"));
 	PlayerSceneCapture->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); 
+
+	//StreamerComponent = CreateDefaultSubobject<UPixelStreamingStreamerComponent>(TEXT("PixelStreamer"));
+	//StreamerComponent->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned

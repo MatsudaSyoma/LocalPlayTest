@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Components/SceneCaptureComponent2D.h"
+#include "PixelStreamingStreamerComponent.h"
 #include "CPP_MyCharacter.generated.h"
 
 class USpringArmComponent;
@@ -30,6 +31,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	USceneCaptureComponent2D* PlayerSceneCapture;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UPixelStreamingStreamerComponent* StreamerComponent;
 
 protected:
 	// Called when the game starts or when spawned

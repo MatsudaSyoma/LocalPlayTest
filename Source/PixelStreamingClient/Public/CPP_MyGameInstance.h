@@ -17,4 +17,5 @@ class PIXELSTREAMINGCLIENT_API UCPP_MyGameInstance : public UGameInstance
 public:
 	UCPP_MyGameInstance();
 	void SpawnPlayer(int num);
+
 };
