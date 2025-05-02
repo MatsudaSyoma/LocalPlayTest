@@ -32,7 +32,7 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	USceneCaptureComponent2D* PlayerSceneCapture;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pixel Streaming", meta = (AllowPrivateAccess = "true"))
 	UPixelStreamingStreamerComponent* StreamerComponent;
 
 protected:

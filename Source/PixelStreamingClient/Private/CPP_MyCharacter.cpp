@@ -24,8 +24,7 @@ ACPP_MyCharacter::ACPP_MyCharacter()
 	PlayerSceneCapture = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("PlayerSceneCapture"));
 	PlayerSceneCapture->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); 
 
-	//StreamerComponent = CreateDefaultSubobject<UPixelStreamingStreamerComponent>(TEXT("PixelStreamer"));
-	//StreamerComponent->SetupAttachment(RootComponent);
+	StreamerComponent = CreateDefaultSubobject<UPixelStreamingStreamerComponent>(TEXT("PixelStreamer"));
 }
 
 // Called when the game starts or when spawned

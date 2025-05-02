@@ -61,8 +61,9 @@ void ACPP_GameMode::BeginPlay()
         PlayerWidget->AddToViewport();
 
         // プレイヤー配列のfor文
-        for (AActor* Actor : FoundCharacters)
+        for (int i = 0;i < FoundCharacters.Num(); i++)
         {
+            AActor* Actor = FoundCharacters[i];
             ACPP_MyCharacter* PlayerChar = Cast<ACPP_MyCharacter>(Actor);
             if (PlayerChar)
             {
@@ -81,6 +82,12 @@ void ACPP_GameMode::BeginPlay()
 
                     // PlayerWidgetにRenderTargetを渡す
                     PlayerWidget->SetRenderTargetTexture(RenderTarget);
+                }
+
+                UPixelStreamingStreamerComponent* StreamComp = PlayerChar->StreamerComponent;
+                if (StreamComp)
+                {
+                    StreamComp->StreamerId = FString::FromInt(i);
                 }
             }
         }
