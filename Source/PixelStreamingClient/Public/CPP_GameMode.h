@@ -33,7 +33,6 @@ protected:
 
 
 private:
-	void PlayerSetup(APlayerController pcontroller);
 
 	TSubclassOf<AActor> ThirdPersonCharacter;
 
