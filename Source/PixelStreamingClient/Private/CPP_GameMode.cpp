@@ -19,6 +19,7 @@
 #include "Engine/TextureRenderTarget2D.h"
 #include "Blueprint/UserWidget.h"
 #include "Components/Widget.h"
+#include "CPP_MyPlayerController.h"
 
 
 ACPP_GameMode::ACPP_GameMode()
@@ -31,6 +32,9 @@ ACPP_GameMode::ACPP_GameMode()
     {
         DefaultPawnClass = ThirdPersonCharacter;
     }
+
+
+    PlayerControllerClass = ACPP_MyPlayerController::StaticClass();
 
     // このクラスに関連するウィジェットをエディタで設定できるようにする
     static ConstructorHelpers::FClassFinder<UUserWidget> PlayerWidget(TEXT("/Game/ThirdPerson/WBP/WBP_PlayerView"));
