@@ -1,4 +1,4 @@
-/*このcppは、PlayerSpawn 関数がある。
+/*このcppは、 PlayerSpawn 関数がある。
 引数に指定した数を入れるとその数だけスポーンする*/
 
 #include "CPP_MyGameInstance.h"

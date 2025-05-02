@@ -28,7 +28,7 @@ public:
 	// Sets default values for this character's properties
 	ACPP_MyCharacter();
 
-	UPROPERTY(EditAnywhere, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	USceneCaptureComponent2D* PlayerSceneCapture;
 
 protected:

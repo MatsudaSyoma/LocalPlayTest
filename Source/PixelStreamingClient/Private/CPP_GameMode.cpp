@@ -37,8 +37,8 @@ ACPP_GameMode::ACPP_GameMode()
 void ACPP_GameMode::BeginPlay()
 {
     // プレイヤーをスポーン
-	UCPP_MyGameInstance* gameinstance = Cast<UCPP_MyGameInstance>(GetWorld()->GetGameInstance());
-	gameinstance->SpawnPlayer(1);
+	//UCPP_MyGameInstance* gameinstance = Cast<UCPP_MyGameInstance>(GetWorld()->GetGameInstance());
+	//gameinstance->SpawnPlayer(1);
 	
     // プレイヤーのControllerを取得
     APlayerController* PlayerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
@@ -53,7 +53,6 @@ void ACPP_GameMode::BeginPlay()
             {
                 // RenderTargetを生成
                 UTextureRenderTarget2D* RenderTarget = NewObject<UTextureRenderTarget2D>(this);
-                RenderTarget->AddToRoot(); // 一時的なテスト用途
                 RenderTarget->RenderTargetFormat = RTF_RGBA8;
                 RenderTarget->InitAutoFormat(512, 512);
                 RenderTarget->UpdateResourceImmediate(true);

@@ -1,4 +1,4 @@
-/*このcppは、SetRenderTargetTexture 関数があり、
+/*このcppは、 xSetRenderTargetTexture 関数があり、
   引数 UTextureRenderTarget2D を RenderImage で描画する*/
 
 #include "CPP_PlayerView.h"
