@@ -1,5 +1,9 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+/*  このcppは GameMode が生成されたときに MyGameInstance の
+    SpawnPlayerを呼び出したあと、プレイヤーの情報を取得(まだ1体のみしか取得しない)、
+    取得されたプレイヤーに UTextureRenderTarget2D を生成して、
+    プレイヤーが持つ USceneCaptureComponent2D の情報を生成した UTextureRenderTarget2D に代入。
+    そして、 UCPP_PlayerView というWidgetを生成し、それが持つ関数 SetRenderTargetTexture(RenderTarget)を
+    呼び出して、WidgetのImageに UTextureRenderTarget2D の情報を送り、プレイヤーで AddToViewport を行う。*/
 
 #include "CPP_GameMode.h"
 #include "CPP_MyGameInstance.h"
@@ -13,6 +17,7 @@
 
 ACPP_GameMode::ACPP_GameMode()
 {
+    // BPのプレイヤーを取得、DefaultPawnClass に設定
 	FString CharacterPath = "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter_c";
 	static ConstructorHelpers::FObjectFinder<UClass> CharacterBP(*CharacterPath);
 	ThirdPersonCharacter = CharacterBP.Object;
@@ -31,8 +36,8 @@ ACPP_GameMode::ACPP_GameMode()
 
 void ACPP_GameMode::BeginPlay()
 {
+    // プレイヤーをスポーン
 	UCPP_MyGameInstance* gameinstance = Cast<UCPP_MyGameInstance>(GetWorld()->GetGameInstance());
-
 	gameinstance->SpawnPlayer(1);
 	
     // プレイヤーのControllerを取得
@@ -63,8 +68,8 @@ void ACPP_GameMode::BeginPlay()
                     UCPP_PlayerView* PlayerView = Cast<UCPP_PlayerView>(PlayerWidget);
                     if (PlayerView)
                     {
-
-                        PlayerView->SetRenderTargetTexture(RenderTarget);  // Blueprint関数を呼び出す
+                        // Widgetの関数を呼び出す
+                        PlayerView->SetRenderTargetTexture(RenderTarget);
                         PlayerWidget->AddToViewport();
                     }
                 }

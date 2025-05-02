@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+// Private/CPP_MyGameInstance.cpp
 
 #pragma once
 
@@ -17,10 +17,4 @@ class PIXELSTREAMINGCLIENT_API UCPP_MyGameInstance : public UGameInstance
 public:
 	UCPP_MyGameInstance();
 	void SpawnPlayer(int num);
-
-protected:
-	virtual void Init()override;
-	virtual void OnStart()override;
-
-
 };

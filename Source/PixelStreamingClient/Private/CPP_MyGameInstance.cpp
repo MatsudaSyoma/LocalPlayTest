@@ -1,5 +1,5 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
+/*このcppは、PlayerSpawn 関数がある。
+引数に指定した数を入れるとその数だけスポーンする*/
 
 #include "CPP_MyGameInstance.h"
 
@@ -7,21 +7,13 @@ UCPP_MyGameInstance::UCPP_MyGameInstance()
 {
 }
 
-void UCPP_MyGameInstance::Init()
-{
-
-}
-
-void UCPP_MyGameInstance::OnStart()
-{
-	//UE_LOG(LogTemp, Log, TEXT("--------LogMessage"));
-	//FString outerror;
-	//CreateLocalPlayer(-1, outerror, true);
-}
-
+// プレイヤーをスポーン
 void UCPP_MyGameInstance::SpawnPlayer(int num)
 {
-	UE_LOG(LogTemp, Log, TEXT("--------LogMessage"));
-	FString outerror;
-	CreateLocalPlayer(-1, outerror, true);
+	for (int i = 0; i < num; i++)
+	{
+		UE_LOG(LogTemp, Log, TEXT("--------SpawnPlayer"));
+		FString outerror;
+		CreateLocalPlayer(-1, outerror, true);
+	}
 }
