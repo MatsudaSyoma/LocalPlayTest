@@ -55,7 +55,6 @@ void ACPP_MyPlayerController::SetupInputComponent()
 
 void ACPP_MyPlayerController::HandleChange(const FInputActionValue& Value)
 {
-    UE_LOG(LogTemp, Error, TEXT("ohayoooooooooooooooo"));
     changeNum++;
     // ワールドにいるプレイヤーを配列で取得
     TArray<AActor*> FoundCharacters;
