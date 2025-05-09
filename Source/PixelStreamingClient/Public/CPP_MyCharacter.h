@@ -43,6 +43,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pixel Streaming", meta = (AllowPrivateAccess = "true"))
 	UPixelStreamingStreamerVideoInputRenderTarget* VideoInput;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	FString name;
+
 
 	void StartPlayerStreaming(FString id);
 	void StopPlayerStreaming();

@@ -39,7 +39,7 @@ void UCPP_MyGameInstance::Shutdown()
 }
 
 // プレイヤーをスポーン
-void UCPP_MyGameInstance::SpawnPlayer(FString id)
+void UCPP_MyGameInstance::SpawnPlayer(FString id, FString name)
 {
     UE_LOG(LogTemp, Log, TEXT("--------SpawnPlayer"));
 
@@ -78,6 +78,7 @@ void UCPP_MyGameInstance::SpawnPlayer(FString id)
         //UE_LOG(LogTemp, Error, TEXT("Pawn は ACPP_MyCharacter ではありません"));
         return;
     }
+    PlayerChar->name = name;
     PlayerChar->StartPlayerStreaming(id);
 }
 
@@ -85,6 +86,8 @@ void UCPP_MyGameInstance::SpawnPlayer(FString id)
 void UCPP_MyGameInstance::OnMessageReceived(const FString& Message)
 {
     UE_LOG(LogTemp, Log, TEXT("Received Message: %s"), *Message);
-    FString id = Message.RightChop(19);
-    SpawnPlayer(id);
+    FString message = Message.RightChop(19);
+    FString id = message.Left(12);
+    FString name = message.RightChop(13);
+    SpawnPlayer(id, name);
 }

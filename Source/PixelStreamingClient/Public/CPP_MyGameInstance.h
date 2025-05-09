@@ -19,7 +19,8 @@ public:
 	UCPP_MyGameInstance();
 	virtual void Init() override;
 	virtual void Shutdown() override;
-	void SpawnPlayer(FString id);
+	void SpawnPlayer(FString id, FString name);
+	//void SpawnPlayer(FString id);
 
 	void OnMessageReceived(const FString& Message);
 
