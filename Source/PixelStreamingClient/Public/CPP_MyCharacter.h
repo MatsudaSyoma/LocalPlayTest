@@ -12,7 +12,7 @@ class USpringArmComponent;
 class UCameraComponent;
 class UTextureRenderTarget2D;
 class UPixelStreamingStreamerVideoInputRenderTarget;
-
+class UWidgetComponent;
 UCLASS()
 class PIXELSTREAMINGCLIENT_API ACPP_MyCharacter : public ACharacter
 {
@@ -43,6 +43,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pixel Streaming", meta = (AllowPrivateAccess = "true"))
 	UPixelStreamingStreamerVideoInputRenderTarget* VideoInput;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UWidgetComponent* NameWidget;
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	FString name;
 
@@ -58,5 +61,4 @@ public:
 
 	virtual void Tick(float DeltaTime) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 };

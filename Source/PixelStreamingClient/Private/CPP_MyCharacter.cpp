@@ -9,6 +9,10 @@
 #include "Components/SceneCaptureComponent2D.h"
 #include "Engine/TextureRenderTarget2D.h"
 #include "PixelStreamingStreamerVideoInputRenderTarget.h"
+#include "Components/WidgetComponent.h"
+#include "Blueprint/UserWidget.h"
+#include "CPP_PlayerName.h"
+#include "Components/TextBlock.h"
 
 // Sets default values
 ACPP_MyCharacter::ACPP_MyCharacter()
@@ -30,6 +34,16 @@ ACPP_MyCharacter::ACPP_MyCharacter()
 	PlayerSceneCapture->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); 
 
 	StreamerComponent = CreateDefaultSubobject<UPixelStreamingStreamerComponent>(TEXT("PixelStreamer"));
+
+	NameWidget = CreateDefaultSubobject<UWidgetComponent>(TEXT("NameWidget"));
+	NameWidget->SetupAttachment(RootComponent);
+	NameWidget->SetWidgetSpace(EWidgetSpace::World); // 3D空間に表示
+	NameWidget->SetDrawSize(FVector2D(500.0f, 500.0f)); // ウィジェットのサイズ
+	static ConstructorHelpers::FClassFinder<UUserWidget> WidgetClass(TEXT("/Game/ThirdPerson/WBP/WBP_PlayerName")); // パスは自分のUMGに合わせて
+	if (WidgetClass.Succeeded())
+	{
+		NameWidget->SetWidgetClass(WidgetClass.Class);
+	}
 }
 
 void ACPP_MyCharacter::StartPlayerStreaming(FString id)
@@ -57,7 +71,7 @@ void ACPP_MyCharacter::StartPlayerStreaming(FString id)
 					VideoInput->Target = RenderTarget;
 					StreamerComponent->StreamerId = id;
 					StreamerComponent->VideoInput = VideoInput;
-					StreamerComponent->StartStreaming();	
+					//StreamerComponent->StartStreaming();	
 				}
             }
 		}
@@ -84,7 +98,6 @@ void ACPP_MyCharacter::EndPlay(const EEndPlayReason::Type EndPlayReason)
 void ACPP_MyCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 // Called to bind functionality to input
@@ -93,4 +106,3 @@ void ACPP_MyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
-
