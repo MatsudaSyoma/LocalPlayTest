@@ -44,7 +44,7 @@ public:
 	UPixelStreamingStreamerVideoInputRenderTarget* VideoInput;
 
 
-	void StartPlayerStreaming(int id);
+	void StartPlayerStreaming(FString id);
 	void StopPlayerStreaming();
 
 protected:

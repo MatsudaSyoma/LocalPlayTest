@@ -32,7 +32,7 @@ ACPP_MyCharacter::ACPP_MyCharacter()
 	StreamerComponent = CreateDefaultSubobject<UPixelStreamingStreamerComponent>(TEXT("PixelStreamer"));
 }
 
-void ACPP_MyCharacter::StartPlayerStreaming(int id)
+void ACPP_MyCharacter::StartPlayerStreaming(FString id)
 {
     // PlayerCharにアタッチされているSceneCapture2Dを取得
     if (PlayerSceneCapture)
@@ -55,9 +55,9 @@ void ACPP_MyCharacter::StartPlayerStreaming(int id)
 				if (VideoInput)
 				{
 					VideoInput->Target = RenderTarget;
-					StreamerComponent->StreamerId = FString::FromInt(id);
+					StreamerComponent->StreamerId = id;
 					StreamerComponent->VideoInput = VideoInput;
-					//StreamerComponent->StartStreaming();	
+					StreamerComponent->StartStreaming();	
 				}
             }
 		}

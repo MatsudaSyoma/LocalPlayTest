@@ -5,6 +5,7 @@
 #include "WebSocketsModule.h"
 #include "PixelStreamingInputComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "CPP_MyCharacter.h"
 
 UCPP_MyGameInstance::UCPP_MyGameInstance()
 {
@@ -38,17 +39,52 @@ void UCPP_MyGameInstance::Shutdown()
 }
 
 // プレイヤーをスポーン
-void UCPP_MyGameInstance::SpawnPlayer(int num)
+void UCPP_MyGameInstance::SpawnPlayer(FString id)
 {
-	for (int i = 0; i < num; i++)
-	{
-		UE_LOG(LogTemp, Log, TEXT("--------SpawnPlayer"));
-		FString outerror;
-		CreateLocalPlayer(-1, outerror, true);
-	}
+    UE_LOG(LogTemp, Log, TEXT("--------SpawnPlayer"));
+
+    FString outerror;
+    ULocalPlayer* LocalPlayer = CreateLocalPlayer(-1, outerror, true);
+    if (!LocalPlayer)
+    {
+        UE_LOG(LogTemp, Error, TEXT("LocalPlayer 作成に失敗: %s"), *outerror);
+        return;
+    }
+
+    UWorld* World = GetWorld();
+    if (!World)
+    {
+        UE_LOG(LogTemp, Error, TEXT("World が無効"));
+        return;
+    }
+
+    APlayerController* PC = LocalPlayer->PlayerController;
+    if (!PC)
+    {
+        UE_LOG(LogTemp, Error, TEXT("PlayerController が無効"));
+        return;
+    }
+
+    APawn* Pawn = PC->GetPawn();
+    if (!Pawn)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("まだ Pawn が存在しない"));
+        return;
+    }
+
+    ACPP_MyCharacter* PlayerChar = Cast<ACPP_MyCharacter>(Pawn);
+    if (!PlayerChar)
+    {
+        //UE_LOG(LogTemp, Error, TEXT("Pawn は ACPP_MyCharacter ではありません"));
+        return;
+    }
+    PlayerChar->StartPlayerStreaming(id);
 }
+
 
 void UCPP_MyGameInstance::OnMessageReceived(const FString& Message)
 {
     UE_LOG(LogTemp, Log, TEXT("Received Message: %s"), *Message);
+    FString id = Message.RightChop(19);
+    SpawnPlayer(id);
 }
