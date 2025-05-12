@@ -58,7 +58,7 @@ void ACPP_GameMode::BeginPlay()
     UCPP_PlayerView* PlayerWidget = CreateWidget<UCPP_PlayerView>(GetWorld(), PlayerWidgetClass);
     if (PlayerWidget)
     {
-        PlayerWidget->AddToViewport();
+        //PlayerWidget->AddToViewport();
 
         // プレイヤー配列のfor文
         for (AActor* Actor : FoundCharacters)

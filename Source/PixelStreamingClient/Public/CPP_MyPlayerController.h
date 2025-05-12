@@ -23,12 +23,18 @@ private:
 
 	UPROPERTY()
 	TObjectPtr<UInputAction> ChangeAction;
+	TObjectPtr<UInputAction> LeftClickAction;
+	TObjectPtr<UInputAction> MouseWheelAction;
 	
 	int changeNum = 0;
 	// èàóùÅiîCà”Åj
 	UFUNCTION()
-	void HandleChange(const FInputActionValue& Value);
+	void HandleChangePlayer(const FInputActionValue& Value);
+	void HandlePressLeftClick(const FInputActionValue& Value);
+	void HandleReleaseLeftClick(const FInputActionValue& Value);
+	void HandleMouseWheel(const FInputActionValue& Value);
 protected:
 	virtual void BeginPlay() override;
 	virtual void SetupInputComponent() override;
+	virtual void Tick(float DeltaSeconds) override;
 };

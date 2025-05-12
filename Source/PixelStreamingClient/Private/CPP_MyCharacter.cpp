@@ -3,7 +3,7 @@
 #include "CPP_MyCharacter.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/SpringArmComponent.h"
-
+#include "Components/WidgetInteractionComponent.h"
 
 // Sets default values
 ACPP_MyCharacter::ACPP_MyCharacter()
@@ -24,6 +24,12 @@ ACPP_MyCharacter::ACPP_MyCharacter()
 	PlayerSceneCapture = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("PlayerSceneCapture"));
 	PlayerSceneCapture->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); 
 
+	WidgetInteraction = CreateDefaultSubobject<UWidgetInteractionComponent>(TEXT("WidgetInteraction"));
+	WidgetInteraction->SetupAttachment(CameraBoom, USpringArmComponent::SocketName); // Attach the camera to the end of the boom and let the boom adjust to match the controller orientation
+	WidgetInteraction->InteractionSource = EWidgetInteractionSource::Custom; // Camera does not rotate relative to arm
+
+
+
 	//StreamerComponent = CreateDefaultSubobject<UPixelStreamingStreamerComponent>(TEXT("PixelStreamer"));
 	//StreamerComponent->SetupAttachment(RootComponent);
 }
@@ -39,7 +45,6 @@ void ACPP_MyCharacter::BeginPlay()
 void ACPP_MyCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
 }
 
 // Called to bind functionality to input
@@ -47,4 +52,24 @@ void ACPP_MyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void ACPP_MyCharacter::SetWidgetInteractionHit(FHitResult hit)
+{
+	WidgetInteraction->SetCustomHitResult(hit);
+}
+
+void ACPP_MyCharacter::PressPointer(FKey key)
+{
+	WidgetInteraction->PressPointerKey(key);
+}
+
+void ACPP_MyCharacter::ReleasePointer(FKey key)
+{
+	WidgetInteraction->ReleasePointerKey(key);
+}
+
+void ACPP_MyCharacter::ScrollWheel(float val)
+{
+	WidgetInteraction->ScrollWheel(val);
 }

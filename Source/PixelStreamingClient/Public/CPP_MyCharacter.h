@@ -10,6 +10,7 @@
 
 class USpringArmComponent;
 class UCameraComponent;
+class UWidgetInteractionComponent;
 
 UCLASS()
 class PIXELSTREAMINGCLIENT_API ACPP_MyCharacter : public ACharacter
@@ -25,6 +26,8 @@ class PIXELSTREAMINGCLIENT_API ACPP_MyCharacter : public ACharacter
 	UCameraComponent* FollowCamera;
 
 
+
+
 public:
 	// Sets default values for this character's properties
 	ACPP_MyCharacter();
@@ -34,6 +37,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	UPixelStreamingStreamerComponent* StreamerComponent;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	UWidgetInteractionComponent* WidgetInteraction;
 
 protected:
 	// Called when the game starts or when spawned
@@ -46,4 +52,8 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	void SetWidgetInteractionHit(FHitResult hit);
+	void PressPointer(FKey key);
+	void ReleasePointer(FKey key);
+	void ScrollWheel(float val);
 };
