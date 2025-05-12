@@ -1,4 +1,8 @@
-// Private/CPP_GameMode.cpp
+﻿// ファイル名: CPP_GameMode.h
+// 作成日: 2025-05-02 
+// 更新日: 2025-05-12 
+// 更新者: 松田 祥眞
+// 概要:   GameMode での初期設定をするクラス。
 
 #pragma once
 

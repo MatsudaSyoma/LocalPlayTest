@@ -1,5 +1,8 @@
-/*‚±‚Ìcpp‚ÍA PlayerSpawn ŠÖ”‚ª‚ ‚éB
-ˆø”‚Éw’è‚µ‚½”‚ğ“ü‚ê‚é‚Æ‚»‚Ì”‚¾‚¯ƒXƒ|[ƒ“‚·‚é*/
+ï»¿// ãƒ•ã‚¡ã‚¤ãƒ«å: CPP_MyGameInstance.cpp
+// ä½œæˆæ—¥: 2025-05-02 
+// æ›´æ–°æ—¥: 2025-05-12 
+// æ›´æ–°è€…: æ¾ç”° ç¥¥çœ
+// æ¦‚è¦:   ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚¹ãƒãƒ¼ãƒ³ã¨ã€WebSocketã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å–å¾—ã™ã‚‹ã‚¯ãƒ©ã‚¹ã€‚
 
 #include "CPP_MyGameInstance.h"
 #include "WebSocketsModule.h"
@@ -21,11 +24,11 @@ void UCPP_MyGameInstance::Init()
     if (WebSocket.IsValid())
     {
         WebSocket->Connect();
-        UE_LOG(LogTemp, Log, TEXT("------------------------------WebSocket server started at ws://localhost:8080"));
+        UE_LOG(LogTemp, Log, TEXT("WebSocket server started at ws://localhost:8080"));
     }
     else
     {
-        UE_LOG(LogTemp, Error, TEXT("------------------------------Failed to start WebSocket server"));
+        UE_LOG(LogTemp, Error, TEXT("Failed to start WebSocket server"));
     }
 }
 
@@ -38,51 +41,54 @@ void UCPP_MyGameInstance::Shutdown()
     }
 }
 
-// ƒvƒŒƒCƒ„[‚ğƒXƒ|[ƒ“
+// ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚’ã‚¹ãƒãƒ¼ãƒ³
 void UCPP_MyGameInstance::SpawnPlayer(FString id, FString name)
 {
     UE_LOG(LogTemp, Log, TEXT("--------SpawnPlayer"));
 
     FString outerror;
     ULocalPlayer* LocalPlayer = CreateLocalPlayer(-1, outerror, true);
+
     if (!LocalPlayer)
     {
-        UE_LOG(LogTemp, Error, TEXT("LocalPlayer ì¬‚É¸”s: %s"), *outerror);
+        UE_LOG(LogTemp, Error, TEXT("LocalPlayer ä½œæˆã«å¤±æ•—: %s"), *outerror);
         return;
     }
 
     UWorld* World = GetWorld();
     if (!World)
     {
-        UE_LOG(LogTemp, Error, TEXT("World ‚ª–³Œø"));
+        UE_LOG(LogTemp, Error, TEXT("World ãŒç„¡åŠ¹"));
         return;
     }
 
     APlayerController* PC = LocalPlayer->PlayerController;
     if (!PC)
     {
-        UE_LOG(LogTemp, Error, TEXT("PlayerController ‚ª–³Œø"));
+        UE_LOG(LogTemp, Error, TEXT("PlayerController ãŒç„¡åŠ¹"));
         return;
     }
 
     APawn* Pawn = PC->GetPawn();
     if (!Pawn)
     {
-        UE_LOG(LogTemp, Warning, TEXT("‚Ü‚¾ Pawn ‚ª‘¶İ‚µ‚È‚¢"));
+        UE_LOG(LogTemp, Warning, TEXT("ã¾ã  Pawn ãŒå­˜åœ¨ã—ãªã„"));
         return;
     }
 
     ACPP_MyCharacter* PlayerChar = Cast<ACPP_MyCharacter>(Pawn);
     if (!PlayerChar)
     {
-        //UE_LOG(LogTemp, Error, TEXT("Pawn ‚Í ACPP_MyCharacter ‚Å‚Í‚ ‚è‚Ü‚¹‚ñ"));
+        //UE_LOG(LogTemp, Error, TEXT("Pawn ã¯ ACPP_MyCharacter ã§ã¯ã‚ã‚Šã¾ã›ã‚“"));
         return;
     }
+
+    // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã«nameã¨idã‚’æ¸¡ã—ã¦StartStreamingã‚’ã™ã‚‹
     PlayerChar->name = name;
     PlayerChar->StartPlayerStreaming(id);
 }
 
-
+// WebSocketã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’å—ã‘å–ã‚‹å‡¦ç†
 void UCPP_MyGameInstance::OnMessageReceived(const FString& Message)
 {
     UE_LOG(LogTemp, Log, TEXT("Received Message: %s"), *Message);

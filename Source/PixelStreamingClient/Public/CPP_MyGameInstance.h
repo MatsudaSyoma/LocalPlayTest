@@ -1,4 +1,8 @@
-// Private/CPP_MyGameInstance.cpp
+﻿// ファイル名: CPP_MyGameInstance.h
+// 作成日: 2025-05-02 
+// 更新日: 2025-05-12 
+// 更新者: 松田 祥眞
+// 概要:   プレイヤーのスポーンと、WebSocketのメッセージを取得するクラス。
 
 #pragma once
 

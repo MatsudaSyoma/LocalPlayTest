@@ -1,5 +1,5 @@
-/*‚±‚Ìcpp‚ÍA xSetRenderTargetTexture ŠÖ”‚ª‚ ‚èA
-  ˆø” UTextureRenderTarget2D ‚ğ RenderImage ‚Å•`‰æ‚·‚é*/
+ï»¿/*ã“ã®cppã¯ã€ xSetRenderTargetTexture é–¢æ•°ãŒã‚ã‚Šã€
+  å¼•æ•° UTextureRenderTarget2D ã‚’ RenderImage ã§æç”»ã™ã‚‹*/
 
 #include "CPP_PlayerView.h"
 #include "Components/Image.h"
@@ -12,20 +12,20 @@ void UCPP_PlayerView::SetRenderTargetTexture(UTextureRenderTarget2D* InRenderTar
 {
     if (HorizontalBox && InRenderTarget)
     {
-        // V‚µ‚¢Image‚ğì¬
+        // æ–°ã—ã„Imageã‚’ä½œæˆ
         UImage* NewImage = NewObject<UImage>(this);
         if (NewImage)
         {
-            // ‰æ‘œ‚Ìƒuƒ‰ƒV‚ğì¬
+            // ç”»åƒã®ãƒ–ãƒ©ã‚·ã‚’ä½œæˆ
             FSlateBrush NewBrush;
             NewBrush.SetResourceObject(InRenderTarget);
-            NewBrush.ImageSize = FVector2D(512, 512); // ƒTƒCƒY‚Í“K‹X•ÏX
+            NewBrush.ImageSize = FVector2D(512, 512); // ã‚µã‚¤ã‚ºã¯é©å®œå¤‰æ›´
             NewBrush.DrawAs = ESlateBrushDrawType::Image;
 
-            // ‰æ‘œUI‚Éİ’è
+            // ç”»åƒUIã«è¨­å®š
             NewImage->SetBrush(NewBrush);
 
-            // ‰¡•À‚Ñ‚Ìƒ{ƒbƒNƒX‚É’Ç‰Á
+            // æ¨ªä¸¦ã³ã®ãƒœãƒƒã‚¯ã‚¹ã«è¿½åŠ 
             UHorizontalBoxSlot* NewSlot = Cast<UHorizontalBoxSlot>(NewImage->Slot);
             HorizontalBox->AddChild(NewImage);
         }

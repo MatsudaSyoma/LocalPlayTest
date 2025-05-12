@@ -1,4 +1,8 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// ファイル名: CPP_MyPlayerController.h
+// 作成日: 2025-05-02 
+// 更新日: 2025-05-12 
+// 更新者: 松田 祥眞
+// 概要:   プレイヤーの操作を取得、保存するクラス。
 
 #pragma once
 
@@ -27,7 +31,7 @@ private:
 	TObjectPtr<UInputAction> MouseWheelAction;
 	
 	int changeNum = 0;
-	// �����i�C�Ӂj
+	// 処理（任意）
 	UFUNCTION()
 	void HandleChangePlayer(const FInputActionValue& Value);
 	void HandlePressLeftClick(const FInputActionValue& Value);

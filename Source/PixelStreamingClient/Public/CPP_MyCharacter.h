@@ -1,4 +1,8 @@
-﻿// Private/CPP_MyCharacter.cpp
+﻿// ファイル名: CPP_MyCharacter.h
+// 作成日: 2025-05-02 
+// 更新日: 2025-05-12 
+// 更新者: 松田 祥眞
+// 概要:   プレイヤーのカメラ、マウスカーソルの判定を管理する。
 
 #pragma once
 
