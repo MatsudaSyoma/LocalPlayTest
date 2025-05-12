@@ -19,7 +19,7 @@ ACPP_GameMode::ACPP_GameMode()
     PlayerControllerClass = ACPP_MyPlayerController::StaticClass();
     if (ThirdPersonCharacter != nullptr)
     {
-        DefaultPawnClass = ThirdPersonCharacter;
+        //DefaultPawnClass = ThirdPersonCharacter;
     }
 }
 

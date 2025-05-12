@@ -59,7 +59,7 @@ void ACPP_MyCharacter::StartPlayerStreaming(FString id)
         // RenderTargetを生成
 		RenderTarget = NewObject<UTextureRenderTarget2D>(this);
 		RenderTarget->RenderTargetFormat = RTF_RGBA8;
-		RenderTarget->InitAutoFormat(512, 512);
+		RenderTarget->InitAutoFormat(1920, 1080);
 		RenderTarget->UpdateResourceImmediate(true);
 
 		if (RenderTarget)
@@ -76,7 +76,7 @@ void ACPP_MyCharacter::StartPlayerStreaming(FString id)
 					VideoInput->Target = RenderTarget;
 					StreamerComponent->StreamerId = id;
 					StreamerComponent->VideoInput = VideoInput;
-					//StreamerComponent->StartStreaming();	
+					StreamerComponent->StartStreaming();	
 				}
             }
 		}

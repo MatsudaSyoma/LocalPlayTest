@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+ï»¿// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "CPP_MyPlayerController.h"
@@ -89,7 +89,11 @@ void ACPP_MyPlayerController::Tick(float DeltaSeconds)
     {
        
         ACPP_MyCharacter* PlayerChar = Cast<ACPP_MyCharacter>(GetPawn());
-        PlayerChar->SetWidgetInteractionHit(Hit);
+        if (PlayerChar)
+        {
+            PlayerChar->SetWidgetInteractionHit(Hit);
+        }
+
     }
 
 
@@ -98,7 +102,7 @@ void ACPP_MyPlayerController::Tick(float DeltaSeconds)
 void ACPP_MyPlayerController::HandleChangePlayer(const FInputActionValue& Value)
 {
     changeNum++;
-    // ƒ[ƒ‹ƒh‚É‚¢‚éƒvƒŒƒCƒ„[‚ğ”z—ñ‚Åæ“¾
+    // ãƒ¯ãƒ¼ãƒ«ãƒ‰ã«ã„ã‚‹ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚’é…åˆ—ã§å–å¾—
     TArray<AActor*> FoundCharacters;
     UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACharacter::StaticClass(), FoundCharacters);
 
@@ -108,25 +112,37 @@ void ACPP_MyPlayerController::HandleChangePlayer(const FInputActionValue& Value)
     }
 
     ACPP_MyCharacter* PlayerChar = Cast<ACPP_MyCharacter>(FoundCharacters[changeNum]);
-    Possess(PlayerChar);
+    if (PlayerChar)
+    {
+        Possess(PlayerChar);
+    }
 
 }
 
 void ACPP_MyPlayerController::HandlePressLeftClick(const FInputActionValue& Value)
 {
     ACPP_MyCharacter* PlayerChar = Cast<ACPP_MyCharacter>(GetPawn());
-    PlayerChar->PressPointer(EKeys::LeftMouseButton);
+    if (PlayerChar)
+    {
+        PlayerChar->PressPointer(EKeys::LeftMouseButton);
+    }
 }
 
 void ACPP_MyPlayerController::HandleReleaseLeftClick(const FInputActionValue& Value)
 {
     ACPP_MyCharacter* PlayerChar = Cast<ACPP_MyCharacter>(GetPawn());
-    PlayerChar->ReleasePointer(EKeys::LeftMouseButton);
+    if (PlayerChar)
+    {
+        PlayerChar->ReleasePointer(EKeys::LeftMouseButton);
+    }
 }
 
 void ACPP_MyPlayerController::HandleMouseWheel(const FInputActionValue& Value)
 {
     float val = Value.Get<float>();
     ACPP_MyCharacter* PlayerChar = Cast<ACPP_MyCharacter>(GetPawn());
-    PlayerChar->ScrollWheel(val);
+    if (PlayerChar)
+    {
+        PlayerChar->ScrollWheel(val);
+    }
 }
