@@ -10,7 +10,9 @@
 
 class USpringArmComponent;
 class UCameraComponent;
-
+class UTextureRenderTarget2D;
+class UPixelStreamingStreamerVideoInputRenderTarget;
+class UWidgetComponent;
 UCLASS()
 class PIXELSTREAMINGCLIENT_API ACPP_MyCharacter : public ACharacter
 {
@@ -26,24 +28,37 @@ class PIXELSTREAMINGCLIENT_API ACPP_MyCharacter : public ACharacter
 
 
 public:
-	// Sets default values for this character's properties
+
 	ACPP_MyCharacter();
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	USceneCaptureComponent2D* PlayerSceneCapture;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pixel Streaming", meta = (AllowPrivateAccess = "true"))
 	UPixelStreamingStreamerComponent* StreamerComponent;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pixel Streaming", meta = (AllowPrivateAccess = "true"))
+	UTextureRenderTarget2D* RenderTarget;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Pixel Streaming", meta = (AllowPrivateAccess = "true"))
+	UPixelStreamingStreamerVideoInputRenderTarget* VideoInput;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
+	UWidgetComponent* NameWidget;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
+	FString name;
+
+
+	void StartPlayerStreaming(FString id);
+	void StopPlayerStreaming();
+
 protected:
-	// Called when the game starts or when spawned
+
 	virtual void BeginPlay() override;
-
+	virtual void EndPlay(const EEndPlayReason::Type EndPlayReason) override;
 public:	
-	// Called every frame
+
 	virtual void Tick(float DeltaTime) override;
-
-	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
-
 };

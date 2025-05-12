@@ -17,7 +17,7 @@ class PIXELSTREAMINGCLIENT_API UCPP_PlayerView : public UUserWidget
 
 public:
     // 横並びのコンテナ
-    UPROPERTY(meta = (BindWidget))
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (BindWidget))
     UHorizontalBox* HorizontalBox;
 
     // RenderTargetをUIにセットする関数
