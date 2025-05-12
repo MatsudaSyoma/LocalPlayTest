@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Engine/GameInstance.h"
+#include "IWebSocket.h"
 #include "CPP_MyGameInstance.generated.h"
 
 /**
@@ -16,6 +17,12 @@ class PIXELSTREAMINGCLIENT_API UCPP_MyGameInstance : public UGameInstance
 	
 public:
 	UCPP_MyGameInstance();
-	void SpawnPlayer(int num);
+	virtual void Init() override;
+	virtual void Shutdown() override;
+	void SpawnPlayer(FString id, FString name);
+	//void SpawnPlayer(FString id);
 
+	void OnMessageReceived(const FString& Message);
+
+    TSharedPtr<IWebSocket> WebSocket;
 };

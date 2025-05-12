@@ -1,88 +1,32 @@
-/*  ‚±‚Ìcpp‚Í GameMode ‚ª¶¬‚³‚ê‚½‚Æ‚«‚É MyGameInstance ‚Ì
-    SpawnPlayer ‚ğŒÄ‚Ño‚µ‚½‚ ‚ÆAƒvƒŒƒCƒ„[‚Ìî•ñ‚ğ”z—ñ‚Åæ“¾A
-    Widget ‚ğ¶¬‚µA GameMode ‚Å AddToViewport ‚ğs‚¤B
-    æ“¾‚³‚ê‚½ƒvƒŒƒCƒ„[‚É UTextureRenderTarget2D ‚ğ¶¬‚µ‚ÄA
-    ƒvƒŒƒCƒ„[‚ª‚Â USceneCaptureComponent2D ‚Ìî•ñ‚ğ¶¬‚µ‚½ UTextureRenderTarget2D ‚É‘ã“üB
-    ‚»‚µ‚ÄA UCPP_PlayerView ‚Æ‚¢‚¤Widget‚ğ¶¬‚µA‚»‚ê‚ª‚ÂŠÖ” SetRenderTargetTexture(RenderTarget)‚ğ
-    ŒÄ‚Ño‚µ‚ÄAWidget‚ÌImage‚É UTextureRenderTarget2D ‚Ìî•ñ‚ğ‘—‚éB*/
+ï»¿/*  ã“ã®cppã¯ GameMode ãŒç”Ÿæˆã•ã‚ŒãŸã¨ãã« MyGameInstance ã®
+    SpawnPlayer ã‚’å‘¼ã³å‡ºã—ãŸã‚ã¨ã€ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®æƒ…å ±ã‚’é…åˆ—ã§å–å¾—ã€
+    ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã® StartPlayerStreaming ã‚’å‘¼ã¶ã€‚*/
 
 #include "CPP_GameMode.h"
 #include "CPP_MyCharacter.h"
 #include "CPP_PlayerView.h"
 #include "CPP_MyGameInstance.h"
-#include "Components/HorizontalBox.h"
-#include "Components/HorizontalBoxSlot.h"
-#include "Kismet/GameplayStatics.h"
-#include "Engine/World.h"
-#include "GameFramework/Actor.h"
-#include "Components/SceneCaptureComponent2D.h"
-#include "Engine/TextureRenderTarget2D.h"
-#include "Blueprint/UserWidget.h"
-#include "Components/Widget.h"
 #include "CPP_MyPlayerController.h"
-
+#include "Kismet/GameplayStatics.h"
 
 ACPP_GameMode::ACPP_GameMode()
 {
-    // BP‚ÌƒvƒŒƒCƒ„[‚ğæ“¾ADefaultPawnClass ‚Éİ’è
+    // BPã®ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã‚’å–å¾—ã€DefaultPawnClass ã«è¨­å®š
     FString CharacterPath = "/Game/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.BP_ThirdPersonCharacter_c";
     static ConstructorHelpers::FObjectFinder<UClass> CharacterBP(*CharacterPath);
     ThirdPersonCharacter = CharacterBP.Object;
+
+    PlayerControllerClass = ACPP_MyPlayerController::StaticClass();
     if (ThirdPersonCharacter != nullptr)
     {
         DefaultPawnClass = ThirdPersonCharacter;
-    }
-
-
-    PlayerControllerClass = ACPP_MyPlayerController::StaticClass();
-
-    // ‚±‚ÌƒNƒ‰ƒX‚ÉŠÖ˜A‚·‚éƒEƒBƒWƒFƒbƒg‚ğƒGƒfƒBƒ^‚Åİ’è‚Å‚«‚é‚æ‚¤‚É‚·‚é
-    static ConstructorHelpers::FClassFinder<UUserWidget> PlayerWidget(TEXT("/Game/ThirdPerson/WBP/WBP_PlayerView"));
-    if (PlayerWidget.Succeeded())
-    {
-        PlayerWidgetClass = PlayerWidget.Class;
     }
 }
 
 void ACPP_GameMode::BeginPlay()
 {
-    // ƒvƒŒƒCƒ„[‚ğƒXƒ|[ƒ“
-    UCPP_MyGameInstance* gameinstance = Cast<UCPP_MyGameInstance>(GetWorld()->GetGameInstance());
-    gameinstance->SpawnPlayer(1);
-
-    // ƒ[ƒ‹ƒh‚É‚¢‚éƒvƒŒƒCƒ„[‚ğ”z—ñ‚Åæ“¾
-    TArray<AActor*> FoundCharacters;
-    UGameplayStatics::GetAllActorsOfClass(GetWorld(), ACharacter::StaticClass(), FoundCharacters);
-
-    // ƒEƒBƒWƒFƒbƒgì¬
-    UCPP_PlayerView* PlayerWidget = CreateWidget<UCPP_PlayerView>(GetWorld(), PlayerWidgetClass);
-    if (PlayerWidget)
+    if (ThirdPersonCharacter != nullptr)
     {
-        //PlayerWidget->AddToViewport();
-
-        // ƒvƒŒƒCƒ„[”z—ñ‚Ìfor•¶
-        for (AActor* Actor : FoundCharacters)
-        {
-            ACPP_MyCharacter* PlayerChar = Cast<ACPP_MyCharacter>(Actor);
-            if (PlayerChar)
-            {
-                // PlayerChar‚ÉƒAƒ^ƒbƒ`‚³‚ê‚Ä‚¢‚éSceneCapture2D‚ğæ“¾
-                USceneCaptureComponent2D* CaptureComp = PlayerChar->PlayerSceneCapture;
-                if (CaptureComp)
-                {
-                    // RenderTarget‚ğ¶¬
-                    UTextureRenderTarget2D* RenderTarget = NewObject<UTextureRenderTarget2D>(this);
-                    RenderTarget->RenderTargetFormat = RTF_RGBA8;
-                    RenderTarget->InitAutoFormat(512, 512);
-                    RenderTarget->UpdateResourceImmediate(true);
-
-                    // SceneCapture‚ÉRenderTarget‚ğŠ„‚è“–‚Ä
-                    CaptureComp->TextureTarget = RenderTarget;
-
-                    // PlayerWidget‚ÉRenderTarget‚ğ“n‚·
-                    PlayerWidget->SetRenderTargetTexture(RenderTarget);
-                }
-            }
-        }
+        DefaultPawnClass = ThirdPersonCharacter;
     }
 }

@@ -4,6 +4,7 @@
 #include "CPP_MyPlayerController.h"
 #include "CPP_MyCharacter.h"
 #include "CPP_GameMode.h"
+#include "Kismet/GameplayStatics.h"
 void ACPP_MyPlayerController::BeginPlay()
 {
     Super::BeginPlay();
