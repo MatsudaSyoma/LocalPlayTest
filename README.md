@@ -37,3 +37,7 @@
 ### CPP_MyCharacter.cpp
 
 プレイヤーのカメラ、マウスカーソルの判定を管理するクラス。
+
+### CPP_MyGameInstance.cpp
+
+プレイヤーのスポーンと、WebSocketのメッセージを取得するクラス。
