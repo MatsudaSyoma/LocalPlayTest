@@ -30,4 +30,10 @@
 
 # 主要ファイル
 
-### 
+### CPP_MyPlayerController.cpp
+
+プレイヤーの操作を取得、保存するクラス。
+
+### CPP_MyCharacter.cpp
+
+プレイヤーのカメラ、マウスカーソルの判定を管理するクラス。
