@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-AgoraUtilityHelper.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\SharedPCH.Engine.Cpp20.InclOrderUnreal5_0.h.obj"
+"C:\Users\RCI_2\Documents\GitHub\LocalPlayTest\Plugins\AgoraVoice\AgoraPlugin\Intermediate\Build\Win64\x64\UnrealEditor\Development\AgoraUtilityHelper\Module.AgoraUtilityHelper.cpp.obj"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Default.rc2.res"
+/OUT:"C:\Users\RCI_2\Documents\GitHub\LocalPlayTest\Plugins\AgoraVoice\AgoraPlugin\Intermediate\Build\Win64\x64\UnrealEditor\Development\AgoraUtilityHelper\UnrealEditor-AgoraUtilityHelper.lib"

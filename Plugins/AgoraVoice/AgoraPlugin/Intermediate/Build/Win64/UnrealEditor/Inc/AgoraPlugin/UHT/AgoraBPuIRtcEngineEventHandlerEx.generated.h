@@ -1,0 +1,480 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "AgoraBlueprintPlugin/AgoraBPuIRtcEngineEventHandlerEx.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UAgoraBPuIRtcEngineEventHandlerExCBExecutor;
+enum class EUABT_CLIENT_ROLE_CHANGE_FAILED_REASON : uint8;
+enum class EUABT_CLIENT_ROLE_TYPE : uint8;
+enum class EUABT_CONNECTION_CHANGED_REASON_TYPE : uint8;
+enum class EUABT_CONNECTION_STATE_TYPE : uint8;
+enum class EUABT_ENCRYPTION_ERROR_TYPE : uint8;
+enum class EUABT_LICENSE_ERROR_TYPE : uint8;
+enum class EUABT_LOCAL_AUDIO_STREAM_REASON : uint8;
+enum class EUABT_LOCAL_AUDIO_STREAM_STATE : uint8;
+enum class EUABT_MEDIA_TRACE_EVENT : uint8;
+enum class EUABT_NETWORK_TYPE : uint8;
+enum class EUABT_REMOTE_AUDIO_STATE : uint8;
+enum class EUABT_REMOTE_AUDIO_STATE_REASON : uint8;
+enum class EUABT_REMOTE_VIDEO_STATE : uint8;
+enum class EUABT_REMOTE_VIDEO_STATE_REASON : uint8;
+enum class EUABT_UPLOAD_ERROR_REASON : uint8;
+enum class EUABT_USER_OFFLINE_REASON_TYPE : uint8;
+enum class EUABT_VIDEO_SOURCE_TYPE : uint8;
+enum class EUABT_WLACC_MESSAGE_REASON : uint8;
+enum class EUABT_WLACC_SUGGEST_ACTION : uint8;
+struct FUABT_AudioVolumeInfo;
+struct FUABT_ClientRoleOptions;
+struct FUABT_LocalAudioStats;
+struct FUABT_LocalVideoStats;
+struct FUABT_RemoteAudioStats;
+struct FUABT_RemoteVideoStats;
+struct FUABT_RtcConnection;
+struct FUABT_RtcStats;
+struct FUABT_VideoLayout;
+struct FUABT_VideoRenderingTracingInfo;
+struct FUABT_WlAccStats;
+#ifdef AGORAPLUGIN_AgoraBPuIRtcEngineEventHandlerEx_generated_h
+#error "AgoraBPuIRtcEngineEventHandlerEx.generated.h already included, missing '#pragma once' in AgoraBPuIRtcEngineEventHandlerEx.h"
+#endif
+#define AGORAPLUGIN_AgoraBPuIRtcEngineEventHandlerEx_generated_h
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_11_DELEGATE \
+AGORAPLUGIN_API void FOnJoinChannelSuccessEx_DelegateWrapper(const FMulticastScriptDelegate& OnJoinChannelSuccessEx, FUABT_RtcConnection const& connection, int32 elapsed);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_12_DELEGATE \
+AGORAPLUGIN_API void FOnLeaveChannelEx_DelegateWrapper(const FMulticastScriptDelegate& OnLeaveChannelEx, FUABT_RtcConnection const& connection, FUABT_RtcStats const& stats);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_13_DELEGATE \
+AGORAPLUGIN_API void FOnUserJoinedEx_DelegateWrapper(const FMulticastScriptDelegate& OnUserJoinedEx, FUABT_RtcConnection const& connection, int64 remoteUid, int32 elapsed);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_14_DELEGATE \
+AGORAPLUGIN_API void FOnUserOfflineEx_DelegateWrapper(const FMulticastScriptDelegate& OnUserOfflineEx, FUABT_RtcConnection const& connection, int64 remoteUid, EUABT_USER_OFFLINE_REASON_TYPE reason);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_18_DELEGATE \
+AGORAPLUGIN_API void FOnRejoinChannelSuccessEx_DelegateWrapper(const FMulticastScriptDelegate& OnRejoinChannelSuccessEx, FUABT_RtcConnection const& connection, int32 elapsed);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_19_DELEGATE \
+AGORAPLUGIN_API void FOnAudioQualityEx_DelegateWrapper(const FMulticastScriptDelegate& OnAudioQualityEx, FUABT_RtcConnection const& connection, int64 remoteUid, int32 quality, int32 delay, int32 lost);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_20_DELEGATE \
+AGORAPLUGIN_API void FOnAudioVolumeIndicationEx_DelegateWrapper(const FMulticastScriptDelegate& OnAudioVolumeIndicationEx, FUABT_RtcConnection const& connection, TArray<FUABT_AudioVolumeInfo> const& speakers, int32 totalVolume);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_21_DELEGATE \
+AGORAPLUGIN_API void FOnRtcStatsEx_DelegateWrapper(const FMulticastScriptDelegate& OnRtcStatsEx, FUABT_RtcConnection const& connection, FUABT_RtcStats const& stats);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_22_DELEGATE \
+AGORAPLUGIN_API void FOnNetworkQualityEx_DelegateWrapper(const FMulticastScriptDelegate& OnNetworkQualityEx, FUABT_RtcConnection const& connection, int64 remoteUid, int32 txQuality, int32 rxQuality);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_23_DELEGATE \
+AGORAPLUGIN_API void FOnIntraRequestReceivedEx_DelegateWrapper(const FMulticastScriptDelegate& OnIntraRequestReceivedEx, FUABT_RtcConnection const& connection);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_24_DELEGATE \
+AGORAPLUGIN_API void FOnFirstLocalVideoFramePublishedEx_DelegateWrapper(const FMulticastScriptDelegate& OnFirstLocalVideoFramePublishedEx, FUABT_RtcConnection const& connection, int32 elapsed);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_25_DELEGATE \
+AGORAPLUGIN_API void FOnVideoSourceFrameSizeChangedEx_DelegateWrapper(const FMulticastScriptDelegate& OnVideoSourceFrameSizeChangedEx, FUABT_RtcConnection const& connection, EUABT_VIDEO_SOURCE_TYPE sourceType, int32 width, int32 height);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_26_DELEGATE \
+AGORAPLUGIN_API void FOnFirstRemoteVideoDecodedEx_DelegateWrapper(const FMulticastScriptDelegate& OnFirstRemoteVideoDecodedEx, FUABT_RtcConnection const& connection, int64 remoteUid, int32 width, int32 height, int32 elapsed);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_27_DELEGATE \
+AGORAPLUGIN_API void FOnVideoSizeChangedEx_DelegateWrapper(const FMulticastScriptDelegate& OnVideoSizeChangedEx, FUABT_RtcConnection const& connection, EUABT_VIDEO_SOURCE_TYPE sourceType, int64 uid, int32 width, int32 height, int32 rotation);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_28_DELEGATE \
+AGORAPLUGIN_API void FOnRemoteVideoStateChangedEx_DelegateWrapper(const FMulticastScriptDelegate& OnRemoteVideoStateChangedEx, FUABT_RtcConnection const& connection, int64 remoteUid, EUABT_REMOTE_VIDEO_STATE state, EUABT_REMOTE_VIDEO_STATE_REASON reason, int32 elapsed);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_29_DELEGATE \
+AGORAPLUGIN_API void FOnFirstRemoteVideoFrameEx_DelegateWrapper(const FMulticastScriptDelegate& OnFirstRemoteVideoFrameEx, FUABT_RtcConnection const& connection, int64 remoteUid, int32 width, int32 height, int32 elapsed);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_31_DELEGATE \
+AGORAPLUGIN_API void FOnUserMuteAudioEx_DelegateWrapper(const FMulticastScriptDelegate& OnUserMuteAudioEx, FUABT_RtcConnection const& connection, int64 remoteUid, bool muted);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_32_DELEGATE \
+AGORAPLUGIN_API void FOnUserMuteVideoEx_DelegateWrapper(const FMulticastScriptDelegate& OnUserMuteVideoEx, FUABT_RtcConnection const& connection, int64 remoteUid, bool muted);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_33_DELEGATE \
+AGORAPLUGIN_API void FOnUserEnableVideoEx_DelegateWrapper(const FMulticastScriptDelegate& OnUserEnableVideoEx, FUABT_RtcConnection const& connection, int64 remoteUid, bool enabled);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_34_DELEGATE \
+AGORAPLUGIN_API void FOnUserEnableLocalVideoEx_DelegateWrapper(const FMulticastScriptDelegate& OnUserEnableLocalVideoEx, FUABT_RtcConnection const& connection, int64 remoteUid, bool enabled);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_35_DELEGATE \
+AGORAPLUGIN_API void FOnUserStateChangedEx_DelegateWrapper(const FMulticastScriptDelegate& OnUserStateChangedEx, FUABT_RtcConnection const& connection, int64 remoteUid, int32 state);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_36_DELEGATE \
+AGORAPLUGIN_API void FOnLocalAudioStatsEx_DelegateWrapper(const FMulticastScriptDelegate& OnLocalAudioStatsEx, FUABT_RtcConnection const& connection, FUABT_LocalAudioStats const& stats);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_37_DELEGATE \
+AGORAPLUGIN_API void FOnRemoteAudioStatsEx_DelegateWrapper(const FMulticastScriptDelegate& OnRemoteAudioStatsEx, FUABT_RtcConnection const& connection, FUABT_RemoteAudioStats const& stats);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_38_DELEGATE \
+AGORAPLUGIN_API void FOnLocalVideoStatsEx_DelegateWrapper(const FMulticastScriptDelegate& OnLocalVideoStatsEx, FUABT_RtcConnection const& connection, FUABT_LocalVideoStats const& stats);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_39_DELEGATE \
+AGORAPLUGIN_API void FOnRemoteVideoStatsEx_DelegateWrapper(const FMulticastScriptDelegate& OnRemoteVideoStatsEx, FUABT_RtcConnection const& connection, FUABT_RemoteVideoStats const& stats);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_40_DELEGATE \
+AGORAPLUGIN_API void FOnConnectionLostEx_DelegateWrapper(const FMulticastScriptDelegate& OnConnectionLostEx, FUABT_RtcConnection const& connection);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_41_DELEGATE \
+AGORAPLUGIN_API void FOnConnectionInterruptedEx_DelegateWrapper(const FMulticastScriptDelegate& OnConnectionInterruptedEx, FUABT_RtcConnection const& connection);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_42_DELEGATE \
+AGORAPLUGIN_API void FOnConnectionBannedEx_DelegateWrapper(const FMulticastScriptDelegate& OnConnectionBannedEx, FUABT_RtcConnection const& connection);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_43_DELEGATE \
+AGORAPLUGIN_API void FOnStreamMessageEx_DelegateWrapper(const FMulticastScriptDelegate& OnStreamMessageEx, FUABT_RtcConnection const& connection, int64 remoteUid, int32 streamId, const FString& data, int64 length, int64 sentTs);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_44_DELEGATE \
+AGORAPLUGIN_API void FOnStreamMessageErrorEx_DelegateWrapper(const FMulticastScriptDelegate& OnStreamMessageErrorEx, FUABT_RtcConnection const& connection, int64 remoteUid, int32 streamId, int32 code, int32 missed, int32 cached);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_45_DELEGATE \
+AGORAPLUGIN_API void FOnRequestTokenEx_DelegateWrapper(const FMulticastScriptDelegate& OnRequestTokenEx, FUABT_RtcConnection const& connection);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_46_DELEGATE \
+AGORAPLUGIN_API void FOnLicenseValidationFailureEx_DelegateWrapper(const FMulticastScriptDelegate& OnLicenseValidationFailureEx, FUABT_RtcConnection const& connection, EUABT_LICENSE_ERROR_TYPE reason);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_47_DELEGATE \
+AGORAPLUGIN_API void FOnTokenPrivilegeWillExpireEx_DelegateWrapper(const FMulticastScriptDelegate& OnTokenPrivilegeWillExpireEx, FUABT_RtcConnection const& connection, const FString& token);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_48_DELEGATE \
+AGORAPLUGIN_API void FOnFirstLocalAudioFramePublishedEx_DelegateWrapper(const FMulticastScriptDelegate& OnFirstLocalAudioFramePublishedEx, FUABT_RtcConnection const& connection, int32 elapsed);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_49_DELEGATE \
+AGORAPLUGIN_API void FOnFirstRemoteAudioFrameEx_DelegateWrapper(const FMulticastScriptDelegate& OnFirstRemoteAudioFrameEx, FUABT_RtcConnection const& connection, int64 userId, int32 elapsed);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_50_DELEGATE \
+AGORAPLUGIN_API void FOnFirstRemoteAudioDecodedEx_DelegateWrapper(const FMulticastScriptDelegate& OnFirstRemoteAudioDecodedEx, FUABT_RtcConnection const& connection, int64 uid, int32 elapsed);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_51_DELEGATE \
+AGORAPLUGIN_API void FOnLocalAudioStateChangedEx_DelegateWrapper(const FMulticastScriptDelegate& OnLocalAudioStateChangedEx, FUABT_RtcConnection const& connection, EUABT_LOCAL_AUDIO_STREAM_STATE state, EUABT_LOCAL_AUDIO_STREAM_REASON reason);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_52_DELEGATE \
+AGORAPLUGIN_API void FOnRemoteAudioStateChangedEx_DelegateWrapper(const FMulticastScriptDelegate& OnRemoteAudioStateChangedEx, FUABT_RtcConnection const& connection, int64 remoteUid, EUABT_REMOTE_AUDIO_STATE state, EUABT_REMOTE_AUDIO_STATE_REASON reason, int32 elapsed);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_53_DELEGATE \
+AGORAPLUGIN_API void FOnActiveSpeakerEx_DelegateWrapper(const FMulticastScriptDelegate& OnActiveSpeakerEx, FUABT_RtcConnection const& connection, int64 uid);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_54_DELEGATE \
+AGORAPLUGIN_API void FOnClientRoleChangedEx_DelegateWrapper(const FMulticastScriptDelegate& OnClientRoleChangedEx, FUABT_RtcConnection const& connection, EUABT_CLIENT_ROLE_TYPE oldRole, EUABT_CLIENT_ROLE_TYPE newRole, FUABT_ClientRoleOptions const& newRoleOptions);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_55_DELEGATE \
+AGORAPLUGIN_API void FOnClientRoleChangeFailedEx_DelegateWrapper(const FMulticastScriptDelegate& OnClientRoleChangeFailedEx, FUABT_RtcConnection const& connection, EUABT_CLIENT_ROLE_CHANGE_FAILED_REASON reason, EUABT_CLIENT_ROLE_TYPE currentRole);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_56_DELEGATE \
+AGORAPLUGIN_API void FOnRemoteAudioTransportStatsEx_DelegateWrapper(const FMulticastScriptDelegate& OnRemoteAudioTransportStatsEx, FUABT_RtcConnection const& connection, int64 remoteUid, int32 delay, int32 lost, int32 rxKBitRate);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_57_DELEGATE \
+AGORAPLUGIN_API void FOnRemoteVideoTransportStatsEx_DelegateWrapper(const FMulticastScriptDelegate& OnRemoteVideoTransportStatsEx, FUABT_RtcConnection const& connection, int64 remoteUid, int32 delay, int32 lost, int32 rxKBitRate);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_58_DELEGATE \
+AGORAPLUGIN_API void FOnConnectionStateChangedEx_DelegateWrapper(const FMulticastScriptDelegate& OnConnectionStateChangedEx, FUABT_RtcConnection const& connection, EUABT_CONNECTION_STATE_TYPE state, EUABT_CONNECTION_CHANGED_REASON_TYPE reason);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_59_DELEGATE \
+AGORAPLUGIN_API void FOnWlAccMessageEx_DelegateWrapper(const FMulticastScriptDelegate& OnWlAccMessageEx, FUABT_RtcConnection const& connection, EUABT_WLACC_MESSAGE_REASON reason, EUABT_WLACC_SUGGEST_ACTION action, const FString& wlAccMsg);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_60_DELEGATE \
+AGORAPLUGIN_API void FOnWlAccStatsEx_DelegateWrapper(const FMulticastScriptDelegate& OnWlAccStatsEx, FUABT_RtcConnection const& connection, FUABT_WlAccStats const& currentStats, FUABT_WlAccStats const& averageStats);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_61_DELEGATE \
+AGORAPLUGIN_API void FOnNetworkTypeChangedEx_DelegateWrapper(const FMulticastScriptDelegate& OnNetworkTypeChangedEx, FUABT_RtcConnection const& connection, EUABT_NETWORK_TYPE type);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_62_DELEGATE \
+AGORAPLUGIN_API void FOnEncryptionErrorEx_DelegateWrapper(const FMulticastScriptDelegate& OnEncryptionErrorEx, FUABT_RtcConnection const& connection, EUABT_ENCRYPTION_ERROR_TYPE errorType);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_63_DELEGATE \
+AGORAPLUGIN_API void FOnUploadLogResultEx_DelegateWrapper(const FMulticastScriptDelegate& OnUploadLogResultEx, FUABT_RtcConnection const& connection, const FString& requestId, bool success, EUABT_UPLOAD_ERROR_REASON reason);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_64_DELEGATE \
+AGORAPLUGIN_API void FOnUserAccountUpdatedEx_DelegateWrapper(const FMulticastScriptDelegate& OnUserAccountUpdatedEx, FUABT_RtcConnection const& connection, int64 remoteUid, const FString& remoteUserAccount);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_65_DELEGATE \
+AGORAPLUGIN_API void FOnSnapshotTakenEx_DelegateWrapper(const FMulticastScriptDelegate& OnSnapshotTakenEx, FUABT_RtcConnection const& connection, int64 uid, const FString& filePath, int32 width, int32 height, int32 errCode);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_66_DELEGATE \
+AGORAPLUGIN_API void FOnVideoRenderingTracingResultEx_DelegateWrapper(const FMulticastScriptDelegate& OnVideoRenderingTracingResultEx, FUABT_RtcConnection const& connection, int64 uid, EUABT_MEDIA_TRACE_EVENT currentEvent, FUABT_VideoRenderingTracingInfo const& tracingInfo);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_68_DELEGATE \
+AGORAPLUGIN_API void FOnSetRtmFlagResultEx_DelegateWrapper(const FMulticastScriptDelegate& OnSetRtmFlagResultEx, FUABT_RtcConnection const& connection, int32 code);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_69_DELEGATE \
+AGORAPLUGIN_API void FOnTranscodedStreamLayoutInfoEx_DelegateWrapper(const FMulticastScriptDelegate& OnTranscodedStreamLayoutInfoEx, FUABT_RtcConnection const& connection, int64 uid, int32 width, int32 height, TArray<FUABT_VideoLayout> const& layoutlist);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_70_DELEGATE \
+AGORAPLUGIN_API void FOnAudioMetadataReceivedEx_DelegateWrapper(const FMulticastScriptDelegate& OnAudioMetadataReceivedEx, FUABT_RtcConnection const& connection, int64 uid, const FString& metadata);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_SPARSE_DATA
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execRemoveAllBlueprintCallbackExecutorExs); \
+	DECLARE_FUNCTION(execAddBlueprintCallbackExecutorEx);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_ACCESSORS
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUAgoraBPuIRtcEngineEventHandlerEx(); \
+	friend struct Z_Construct_UClass_UAgoraBPuIRtcEngineEventHandlerEx_Statics; \
+public: \
+	DECLARE_CLASS(UAgoraBPuIRtcEngineEventHandlerEx, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/AgoraPlugin"), NO_API) \
+	DECLARE_SERIALIZER(UAgoraBPuIRtcEngineEventHandlerEx)
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UAgoraBPuIRtcEngineEventHandlerEx(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UAgoraBPuIRtcEngineEventHandlerEx(UAgoraBPuIRtcEngineEventHandlerEx&&); \
+	NO_API UAgoraBPuIRtcEngineEventHandlerEx(const UAgoraBPuIRtcEngineEventHandlerEx&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UAgoraBPuIRtcEngineEventHandlerEx); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAgoraBPuIRtcEngineEventHandlerEx); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAgoraBPuIRtcEngineEventHandlerEx) \
+	NO_API virtual ~UAgoraBPuIRtcEngineEventHandlerEx();
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_83_PROLOG
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_SPARSE_DATA \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_ACCESSORS \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_INCLASS_NO_PURE_DECLS \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_86_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> AGORAPLUGIN_API UClass* StaticClass<class UAgoraBPuIRtcEngineEventHandlerEx>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_SPARSE_DATA
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void OnAudioMetadataReceived_Implementation(FUABT_RtcConnection const& connection, int64 Uid, const FString& Metadata); \
+	virtual void OnTranscodedStreamLayoutInfo_Implementation(FUABT_RtcConnection const& connection, int64 Uid, int32 Width, int32 Height, TArray<FUABT_VideoLayout> const& Layoutlist); \
+	virtual void OnSetRtmFlagResult_Implementation(FUABT_RtcConnection const& connection, int32 Code); \
+	virtual void OnVideoRenderingTracingResult_Implementation(FUABT_RtcConnection const& connection, int64 Uid, EUABT_MEDIA_TRACE_EVENT CurrentEvent, FUABT_VideoRenderingTracingInfo const& TracingInfo); \
+	virtual void OnSnapshotTaken_Implementation(FUABT_RtcConnection const& connection, int64 Uid, const FString& FilePath, int32 Width, int32 Height, int32 ErrCode); \
+	virtual void OnUserAccountUpdated_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, const FString& RemoteUserAccount); \
+	virtual void OnUploadLogResult_Implementation(FUABT_RtcConnection const& connection, const FString& RequestId, bool Success, EUABT_UPLOAD_ERROR_REASON Reason); \
+	virtual void OnEncryptionError_Implementation(FUABT_RtcConnection const& connection, EUABT_ENCRYPTION_ERROR_TYPE ErrorType); \
+	virtual void OnNetworkTypeChanged_Implementation(FUABT_RtcConnection const& connection, EUABT_NETWORK_TYPE Type); \
+	virtual void OnWlAccStats_Implementation(FUABT_RtcConnection const& connection, FUABT_WlAccStats const& CurrentStats, FUABT_WlAccStats const& AverageStats); \
+	virtual void OnWlAccMessage_Implementation(FUABT_RtcConnection const& connection, EUABT_WLACC_MESSAGE_REASON Reason, EUABT_WLACC_SUGGEST_ACTION Action, const FString& WlAccMsg); \
+	virtual void OnConnectionStateChanged_Implementation(FUABT_RtcConnection const& connection, EUABT_CONNECTION_STATE_TYPE State, EUABT_CONNECTION_CHANGED_REASON_TYPE Reason); \
+	virtual void OnRemoteVideoTransportStats_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, int32 Delay, int32 Lost, int32 RxKBitRate); \
+	virtual void OnRemoteAudioTransportStats_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, int32 Delay, int32 Lost, int32 RxKBitRate); \
+	virtual void OnClientRoleChangeFailed_Implementation(FUABT_RtcConnection const& connection, EUABT_CLIENT_ROLE_CHANGE_FAILED_REASON Reason, EUABT_CLIENT_ROLE_TYPE CurrentRole); \
+	virtual void OnClientRoleChanged_Implementation(FUABT_RtcConnection const& connection, EUABT_CLIENT_ROLE_TYPE OldRole, EUABT_CLIENT_ROLE_TYPE NewRole, FUABT_ClientRoleOptions const& NewRoleOptions); \
+	virtual void OnActiveSpeaker_Implementation(FUABT_RtcConnection const& connection, int64 Uid); \
+	virtual void OnRemoteAudioStateChanged_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, EUABT_REMOTE_AUDIO_STATE State, EUABT_REMOTE_AUDIO_STATE_REASON Reason, int32 Elapsed); \
+	virtual void OnLocalAudioStateChanged_Implementation(FUABT_RtcConnection const& connection, EUABT_LOCAL_AUDIO_STREAM_STATE State, EUABT_LOCAL_AUDIO_STREAM_REASON Reason); \
+	virtual void OnFirstRemoteAudioDecoded_Implementation(FUABT_RtcConnection const& connection, int64 Uid, int32 Elapsed); \
+	virtual void OnFirstRemoteAudioFrame_Implementation(FUABT_RtcConnection const& connection, int64 UserId, int32 Elapsed); \
+	virtual void OnFirstLocalAudioFramePublished_Implementation(FUABT_RtcConnection const& connection, int32 Elapsed); \
+	virtual void OnTokenPrivilegeWillExpire_Implementation(FUABT_RtcConnection const& connection, const FString& Token); \
+	virtual void OnLicenseValidationFailure_Implementation(FUABT_RtcConnection const& connection, EUABT_LICENSE_ERROR_TYPE Reason); \
+	virtual void OnRequestToken_Implementation(FUABT_RtcConnection const& connection); \
+	virtual void OnStreamMessageError_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, int32 StreamId, int32 Code, int32 Missed, int32 Cached); \
+	virtual void OnStreamMessage_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, int32 StreamId, const FString& Data, int64 Length, int64 SentTs); \
+	virtual void OnConnectionBanned_Implementation(FUABT_RtcConnection const& connection); \
+	virtual void OnConnectionInterrupted_Implementation(FUABT_RtcConnection const& connection); \
+	virtual void OnConnectionLost_Implementation(FUABT_RtcConnection const& connection); \
+	virtual void OnRemoteVideoStats_Implementation(FUABT_RtcConnection const& connection, FUABT_RemoteVideoStats const& Stats); \
+	virtual void OnLocalVideoStats_Implementation(FUABT_RtcConnection const& connection, FUABT_LocalVideoStats const& Stats); \
+	virtual void OnRemoteAudioStats_Implementation(FUABT_RtcConnection const& connection, FUABT_RemoteAudioStats const& Stats); \
+	virtual void OnLocalAudioStats_Implementation(FUABT_RtcConnection const& connection, FUABT_LocalAudioStats const& Stats); \
+	virtual void OnUserStateChanged_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, int32 State); \
+	virtual void OnUserEnableLocalVideo_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, bool Enabled); \
+	virtual void OnUserEnableVideo_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, bool Enabled); \
+	virtual void OnUserMuteVideo_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, bool Muted); \
+	virtual void OnUserMuteAudio_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, bool Muted); \
+	virtual void OnFirstRemoteVideoFrame_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, int32 Width, int32 Height, int32 Elapsed); \
+	virtual void OnRemoteVideoStateChanged_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, EUABT_REMOTE_VIDEO_STATE State, EUABT_REMOTE_VIDEO_STATE_REASON Reason, int32 Elapsed); \
+	virtual void OnVideoSizeChanged_Implementation(FUABT_RtcConnection const& connection, EUABT_VIDEO_SOURCE_TYPE SourceType, int64 Uid, int32 Width, int32 Height, int32 Rotation); \
+	virtual void OnFirstRemoteVideoDecoded_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, int32 Width, int32 Height, int32 Elapsed); \
+	virtual void OnFirstLocalVideoFramePublished_Implementation(FUABT_RtcConnection const& connection, int32 Elapsed); \
+	virtual void OnIntraRequestReceived_Implementation(FUABT_RtcConnection const& connection); \
+	virtual void OnNetworkQuality_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, int32 TxQuality, int32 RxQuality); \
+	virtual void OnRtcStats_Implementation(FUABT_RtcConnection const& connection, FUABT_RtcStats const& Stats); \
+	virtual void OnAudioVolumeIndication_Implementation(FUABT_RtcConnection const& connection, TArray<FUABT_AudioVolumeInfo> const& Speakers, int32 TotalVolume); \
+	virtual void OnAudioQuality_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, int32 Quality, int32 Delay, int32 Lost); \
+	virtual void OnRejoinChannelSuccess_Implementation(FUABT_RtcConnection const& connection, int32 Elapsed); \
+	virtual void OnUserOffline_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, EUABT_USER_OFFLINE_REASON_TYPE Reason); \
+	virtual void OnUserJoined_Implementation(FUABT_RtcConnection const& connection, int64 RemoteUid, int32 Elapsed); \
+	virtual void OnLeaveChannel_Implementation(FUABT_RtcConnection const& connection, FUABT_RtcStats const& stats); \
+	virtual void OnJoinChannelSuccess_Implementation(FUABT_RtcConnection const& Connection, int32 Elapsed); \
+ \
+	DECLARE_FUNCTION(execOnAudioMetadataReceived); \
+	DECLARE_FUNCTION(execOnTranscodedStreamLayoutInfo); \
+	DECLARE_FUNCTION(execOnSetRtmFlagResult); \
+	DECLARE_FUNCTION(execOnVideoRenderingTracingResult); \
+	DECLARE_FUNCTION(execOnSnapshotTaken); \
+	DECLARE_FUNCTION(execOnUserAccountUpdated); \
+	DECLARE_FUNCTION(execOnUploadLogResult); \
+	DECLARE_FUNCTION(execOnEncryptionError); \
+	DECLARE_FUNCTION(execOnNetworkTypeChanged); \
+	DECLARE_FUNCTION(execOnWlAccStats); \
+	DECLARE_FUNCTION(execOnWlAccMessage); \
+	DECLARE_FUNCTION(execOnConnectionStateChanged); \
+	DECLARE_FUNCTION(execOnRemoteVideoTransportStats); \
+	DECLARE_FUNCTION(execOnRemoteAudioTransportStats); \
+	DECLARE_FUNCTION(execOnClientRoleChangeFailed); \
+	DECLARE_FUNCTION(execOnClientRoleChanged); \
+	DECLARE_FUNCTION(execOnActiveSpeaker); \
+	DECLARE_FUNCTION(execOnRemoteAudioStateChanged); \
+	DECLARE_FUNCTION(execOnLocalAudioStateChanged); \
+	DECLARE_FUNCTION(execOnFirstRemoteAudioDecoded); \
+	DECLARE_FUNCTION(execOnFirstRemoteAudioFrame); \
+	DECLARE_FUNCTION(execOnFirstLocalAudioFramePublished); \
+	DECLARE_FUNCTION(execOnTokenPrivilegeWillExpire); \
+	DECLARE_FUNCTION(execOnLicenseValidationFailure); \
+	DECLARE_FUNCTION(execOnRequestToken); \
+	DECLARE_FUNCTION(execOnStreamMessageError); \
+	DECLARE_FUNCTION(execOnStreamMessage); \
+	DECLARE_FUNCTION(execOnConnectionBanned); \
+	DECLARE_FUNCTION(execOnConnectionInterrupted); \
+	DECLARE_FUNCTION(execOnConnectionLost); \
+	DECLARE_FUNCTION(execOnRemoteVideoStats); \
+	DECLARE_FUNCTION(execOnLocalVideoStats); \
+	DECLARE_FUNCTION(execOnRemoteAudioStats); \
+	DECLARE_FUNCTION(execOnLocalAudioStats); \
+	DECLARE_FUNCTION(execOnUserStateChanged); \
+	DECLARE_FUNCTION(execOnUserEnableLocalVideo); \
+	DECLARE_FUNCTION(execOnUserEnableVideo); \
+	DECLARE_FUNCTION(execOnUserMuteVideo); \
+	DECLARE_FUNCTION(execOnUserMuteAudio); \
+	DECLARE_FUNCTION(execOnFirstRemoteVideoFrame); \
+	DECLARE_FUNCTION(execOnRemoteVideoStateChanged); \
+	DECLARE_FUNCTION(execOnVideoSizeChanged); \
+	DECLARE_FUNCTION(execOnFirstRemoteVideoDecoded); \
+	DECLARE_FUNCTION(execOnFirstLocalVideoFramePublished); \
+	DECLARE_FUNCTION(execOnIntraRequestReceived); \
+	DECLARE_FUNCTION(execOnNetworkQuality); \
+	DECLARE_FUNCTION(execOnRtcStats); \
+	DECLARE_FUNCTION(execOnAudioVolumeIndication); \
+	DECLARE_FUNCTION(execOnAudioQuality); \
+	DECLARE_FUNCTION(execOnRejoinChannelSuccess); \
+	DECLARE_FUNCTION(execOnUserOffline); \
+	DECLARE_FUNCTION(execOnUserJoined); \
+	DECLARE_FUNCTION(execOnLeaveChannel); \
+	DECLARE_FUNCTION(execOnJoinChannelSuccess);
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_ACCESSORS
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_CALLBACK_WRAPPERS
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_INCLASS_NO_PURE_DECLS \
+private: \
+	static void StaticRegisterNativesUAgoraBPuIRtcEngineEventHandlerExCBExecutor(); \
+	friend struct Z_Construct_UClass_UAgoraBPuIRtcEngineEventHandlerExCBExecutor_Statics; \
+public: \
+	DECLARE_CLASS(UAgoraBPuIRtcEngineEventHandlerExCBExecutor, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/AgoraPlugin"), NO_API) \
+	DECLARE_SERIALIZER(UAgoraBPuIRtcEngineEventHandlerExCBExecutor)
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_ENHANCED_CONSTRUCTORS \
+	/** Standard constructor, called after all reflected properties have been initialized */ \
+	NO_API UAgoraBPuIRtcEngineEventHandlerExCBExecutor(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+private: \
+	/** Private move- and copy-constructors, should never be used */ \
+	NO_API UAgoraBPuIRtcEngineEventHandlerExCBExecutor(UAgoraBPuIRtcEngineEventHandlerExCBExecutor&&); \
+	NO_API UAgoraBPuIRtcEngineEventHandlerExCBExecutor(const UAgoraBPuIRtcEngineEventHandlerExCBExecutor&); \
+public: \
+	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UAgoraBPuIRtcEngineEventHandlerExCBExecutor); \
+	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UAgoraBPuIRtcEngineEventHandlerExCBExecutor); \
+	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UAgoraBPuIRtcEngineEventHandlerExCBExecutor) \
+	NO_API virtual ~UAgoraBPuIRtcEngineEventHandlerExCBExecutor();
+
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_469_PROLOG
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_SPARSE_DATA \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_ACCESSORS \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_CALLBACK_WRAPPERS \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_INCLASS_NO_PURE_DECLS \
+	FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h_471_ENHANCED_CONSTRUCTORS \
+private: \
+PRAGMA_ENABLE_DEPRECATION_WARNINGS
+
+
+template<> AGORAPLUGIN_API UClass* StaticClass<class UAgoraBPuIRtcEngineEventHandlerExCBExecutor>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuIRtcEngineEventHandlerEx_h
+
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

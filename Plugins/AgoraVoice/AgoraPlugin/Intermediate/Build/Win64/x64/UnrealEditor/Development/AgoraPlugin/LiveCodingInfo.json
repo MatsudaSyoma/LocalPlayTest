@@ -1,0 +1,46 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.AgoraPlugin.1.cpp.obj": [
+			"AgoraBPuDataTypes.gen.cpp.obj"
+		],
+		"Module.AgoraPlugin.2.cpp.obj": [
+			"AgoraBPuDataTypesBase.gen.cpp.obj"
+		],
+		"Module.AgoraPlugin.3.cpp.obj": [
+			"AgoraBPuDeviceManager.gen.cpp.obj",
+			"AgoraBPuIMediaPlayerSourceObserver.gen.cpp.obj"
+		],
+		"Module.AgoraPlugin.4.cpp.obj": [
+			"AgoraBPuIRtcEngineEventHandler.gen.cpp.obj"
+		],
+		"Module.AgoraPlugin.5.cpp.obj": [
+			"AgoraBPuIRtcEngineEventHandlerEx.gen.cpp.obj"
+		],
+		"Module.AgoraPlugin.6.cpp.obj": [
+			"AgoraBPuMediaPlayer.gen.cpp.obj",
+			"AgoraBPuRtcEngine.gen.cpp.obj"
+		],
+		"Module.AgoraPlugin.7.cpp.obj": [
+			"AgoraPlugin.init.gen.cpp.obj",
+			"UtilityAgoraBPuLogger.gen.cpp.obj",
+			"UtilityUABTTypeHelper.gen.cpp.obj",
+			"AgoraBPuDeviceManager.cpp.obj",
+			"AgoraBPuIMediaPlayerSourceObserver.cpp.obj",
+			"AgoraBPuIRtcEngineEventHandler.cpp.obj",
+			"AgoraBPuIRtcEngineEventHandlerEx.cpp.obj",
+			"AgoraBPuMediaPlayer.cpp.obj",
+			"AgoraBPuRtcEngine.cpp.obj",
+			"UtilityAgoraBPuLogger.cpp.obj",
+			"AgoraUERTCEngine.cpp.obj"
+		],
+		"Module.AgoraPlugin.8.cpp.obj": [
+			"UnrealMemory.cpp.obj",
+			"AgoraUEVideoFrameObserver.cpp.obj",
+			"VideoFrameDataManager.cpp.obj",
+			"VideoFrameRender.cpp.obj",
+			"VideoFrameRenderManager.cpp.obj",
+			"AgoraPlugin.cpp.obj"
+		]
+	}
+}

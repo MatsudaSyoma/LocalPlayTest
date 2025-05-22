@@ -1,0 +1,8 @@
+{
+	"BuildId": "498a25d1-582b-4b7b-87d8-a27000bd5335",
+	"Modules": 
+	{
+		"AgoraPlugin": "UnrealEditor-AgoraPlugin.dll",
+		"AgoraUtilityHelper": "UnrealEditor-AgoraUtilityHelper.dll"
+	}
+}

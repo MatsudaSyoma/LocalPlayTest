@@ -1,0 +1,33 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\rci_2\\documents\\github\\localplaytest\\plugins\\agoravoice\\agoraplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\agorautilityhelper\\module.agorautilityhelper.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\myunreal\\unrealengine-5.3\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\engine\\sharedpch.engine.cpp20.inclorderunreal5_0.h.pch",
+        "Includes": [
+            "c:\\users\\rci_2\\documents\\github\\localplaytest\\plugins\\agoravoice\\agoraplugin\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\agorautilityhelper\\definitions.agorautilityhelper.h",
+            "c:\\users\\rci_2\\documents\\github\\localplaytest\\plugins\\agoravoice\\agoraplugin\\source\\agorautilityhelper\\private\\agorauevideohelper.cpp",
+            "c:\\users\\rci_2\\documents\\github\\localplaytest\\plugins\\agoravoice\\agoraplugin\\source\\agorautilityhelper\\public\\agorauevideohelper.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\media\\public\\imediaplayer.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\mediautils\\public\\mediaplayerfacade.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\media\\public\\imediaclocksink.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\media\\public\\imediaeventsink.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\mediautils\\public\\imediaplayerlifecyclemanager.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\media\\public\\imediatickable.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\media\\public\\imediatimesource.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\media\\public\\imediatracks.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\mediautils\\public\\mediaplayeroptions.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\mediautils\\uht\\mediaplayeroptions.generated.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\mediautils\\public\\mediasamplesink.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\mediautils\\public\\mediasamplesinks.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\mediaassets\\public\\mediaplayer.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\media\\public\\imediaoptions.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\source\\runtime\\media\\public\\imediametadataitem.h",
+            "c:\\myunreal\\unrealengine-5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\mediaassets\\uht\\mediaplayer.generated.h",
+            "c:\\users\\rci_2\\documents\\github\\localplaytest\\plugins\\agoravoice\\agoraplugin\\source\\agorautilityhelper\\private\\agorautilityhelper.cpp",
+            "c:\\users\\rci_2\\documents\\github\\localplaytest\\plugins\\agoravoice\\agoraplugin\\source\\agorautilityhelper\\public\\agorautilityhelper.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

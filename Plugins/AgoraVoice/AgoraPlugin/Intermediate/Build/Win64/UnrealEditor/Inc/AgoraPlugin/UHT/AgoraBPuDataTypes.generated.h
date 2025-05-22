@@ -1,0 +1,709 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+// IWYU pragma: private, include "AgoraBlueprintPlugin/AgoraBPuDataTypes.h"
+#include "UObject/ObjectMacros.h"
+#include "UObject/ScriptMacros.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+#ifdef AGORAPLUGIN_AgoraBPuDataTypes_generated_h
+#error "AgoraBPuDataTypes.generated.h already included, missing '#pragma once' in AgoraBPuDataTypes.h"
+#endif
+#define AGORAPLUGIN_AgoraBPuDataTypes_generated_h
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_36_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_bool_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_bool>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_73_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_VIDEO_STREAM_TYPE_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_VIDEO_STREAM_TYPE>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_108_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_CAMERA_DIRECTION_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_CAMERA_DIRECTION>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_143_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_CAMERA_FOCAL_LENGTH_TYPE_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_CAMERA_FOCAL_LENGTH_TYPE>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_177_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_double_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_double>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_215_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_int_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_int>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_253_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_ConstCharPtr_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_ConstCharPtr>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_295_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_CLIENT_ROLE_TYPE_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_CLIENT_ROLE_TYPE>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_331_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_AUDIENCE_LATENCY_LEVEL_TYPE_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_AUDIENCE_LATENCY_LEVEL_TYPE>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_367_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_CHANNEL_PROFILE_TYPE_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_CHANNEL_PROFILE_TYPE>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_403_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_video_track_id_t_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_video_track_id_t>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_438_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Opt_THREAD_PRIORITY_TYPE_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Opt_THREAD_PRIORITY_TYPE>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_486_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LastmileProbeOneWayResult_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LastmileProbeOneWayResult>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_524_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_AudioVolumeInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_AudioVolumeInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_565_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LastmileProbeResult_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LastmileProbeResult>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_610_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_RtcStats_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_RtcStats>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_780_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_UplinkNetworkInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_UplinkNetworkInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_806_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_PeerDownlinkInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_PeerDownlinkInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_845_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_DownlinkNetworkInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_DownlinkNetworkInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_890_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LocalAudioStats_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LocalAudioStats>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_953_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_RemoteAudioStats_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_RemoteAudioStats>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1055_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LocalVideoStats_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LocalVideoStats>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1172_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_RemoteVideoStats_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_RemoteVideoStats>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1268_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_WlAccStats_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_WlAccStats>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1299_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_UserInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_UserInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1329_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_VideoRenderingTracingInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_VideoRenderingTracingInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1380_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_TranscodingVideoStream_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_TranscodingVideoStream>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1449_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_VideoLayout_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_VideoLayout>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1510_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_AgoraMetadata_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_AgoraMetadata>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1548_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_DirectCdnStreamingStats_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_DirectCdnStreamingStats>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1589_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ExtensionContext_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ExtensionContext>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1632_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_EncryptionConfig_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_EncryptionConfig>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1689_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ClientRoleOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ClientRoleOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1717_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_SenderOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_SenderOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1745_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_Rectangle_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_Rectangle>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1784_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_VideoCanvas_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_VideoCanvas>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1862_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LogConfig_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LogConfig>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_1898_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_RtcEngineContext_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_RtcEngineContext>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2002_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_RtcConnection_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_RtcConnection>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2041_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_CodecCapLevels_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_CodecCapLevels>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2070_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_CodecCapInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_CodecCapInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2106_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ChannelMediaOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ChannelMediaOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2408_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LeaveChannelOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LeaveChannelOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2447_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_EchoTestConfiguration_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_EchoTestConfiguration>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2500_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_VideoFormat_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_VideoFormat>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2534_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_CameraCapturerConfiguration_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_CameraCapturerConfiguration>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2621_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LastmileProbeConfig_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LastmileProbeConfig>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2661_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_VideoDimensions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_VideoDimensions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2691_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_AdvanceOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_AdvanceOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2727_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_VideoEncoderConfiguration_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_VideoEncoderConfiguration>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2787_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_BeautyOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_BeautyOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2830_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LowlightEnhanceOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LowlightEnhanceOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2860_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_VideoDenoiserOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_VideoDenoiserOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2891_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ColorEnhanceOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ColorEnhanceOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2922_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_VirtualBackgroundSource_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_VirtualBackgroundSource>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2960_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_SegmentationProperty_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_SegmentationProperty>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_2991_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_VideoSubscriptionOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_VideoSubscriptionOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3025_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_AudioRecordingConfiguration_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_AudioRecordingConfiguration>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3072_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_SpatialAudioParams_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_SpatialAudioParams>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3142_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_SimulcastStreamConfig_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_SimulcastStreamConfig>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3178_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ExtensionInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ExtensionInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3231_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ThumbImageBuffer_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ThumbImageBuffer>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3312_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ScreenCaptureSourceInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ScreenCaptureSourceInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3397_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_SIZE_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_SIZE>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3431_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ScreenCaptureParameters_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ScreenCaptureParameters>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3493_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ScreenAudioParameters_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ScreenAudioParameters>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3531_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ScreenVideoParameters_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ScreenVideoParameters>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3575_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ScreenCaptureParameters2_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ScreenCaptureParameters2>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3617_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ScreenCaptureConfiguration_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ScreenCaptureConfiguration>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3671_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_FocalLengthInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_FocalLengthInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3704_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_TranscodingUser_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_TranscodingUser>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3759_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_RtcImage_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_RtcImage>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3817_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LiveStreamAdvancedFeature_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LiveStreamAdvancedFeature>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3849_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LiveTranscoding_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LiveTranscoding>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_3985_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LocalTranscoderConfiguration_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LocalTranscoderConfiguration>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4024_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_DataStreamConfig_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_DataStreamConfig>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4056_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_WatermarkRatio_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_WatermarkRatio>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4092_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_WatermarkOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_WatermarkOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4137_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_AgoraRhythmPlayerConfig_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_AgoraRhythmPlayerConfig>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4169_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ContentInspectModule_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ContentInspectModule>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4199_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ContentInspectConfig_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ContentInspectConfig>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4248_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LogUploadServerInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LogUploadServerInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4292_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_AdvancedConfigInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_AdvancedConfigInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4317_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LocalAccessPointConfiguration_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LocalAccessPointConfiguration>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4389_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_AdvancedAudioOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_AdvancedAudioOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4417_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ImageTrackOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ImageTrackOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4448_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_DeviceInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_DeviceInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4475_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ChannelMediaInfo_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ChannelMediaInfo>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4513_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_ChannelMediaRelayConfiguration_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_ChannelMediaRelayConfiguration>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4561_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_FaceShapeBeautyOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_FaceShapeBeautyOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4603_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_FaceShapeAreaOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_FaceShapeAreaOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4647_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_FilterEffectOptions_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_FilterEffectOptions>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4697_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_StreamLayerConfig_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_StreamLayerConfig>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4743_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_SimulcastConfig_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_SimulcastConfig>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4782_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_MixedAudioStream_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_MixedAudioStream>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4837_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_LocalAudioMixerConfiguration_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_LocalAudioMixerConfiguration>();
+
+#define FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h_4895_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FUABT_SnapshotConfig_Statics; \
+	AGORAPLUGIN_API static class UScriptStruct* StaticStruct();
+
+
+template<> AGORAPLUGIN_API UScriptStruct* StaticStruct<struct FUABT_SnapshotConfig>();
+
+#undef CURRENT_FILE_ID
+#define CURRENT_FILE_ID FID_Users_RCI_2_Documents_GitHub_LocalPlayTest_Plugins_AgoraVoice_AgoraPlugin_Source_AgoraPlugin_Public_AgoraBlueprintPlugin_AgoraBPuDataTypes_h
+
+
+#define FOREACH_ENUM_EAGORABPUEVENTHANDLERTYPE(op) \
+	op(EAgoraBPuEventHandlerType::None) \
+	op(EAgoraBPuEventHandlerType::EventHandler) \
+	op(EAgoraBPuEventHandlerType::EventHandlerEx) 
+
+enum class EAgoraBPuEventHandlerType : uint8;
+template<> struct TIsUEnumClass<EAgoraBPuEventHandlerType> { enum { Value = true }; };
+template<> AGORAPLUGIN_API UEnum* StaticEnum<EAgoraBPuEventHandlerType>();
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

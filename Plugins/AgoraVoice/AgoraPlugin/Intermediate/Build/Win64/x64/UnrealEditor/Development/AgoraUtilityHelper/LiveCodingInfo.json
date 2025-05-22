@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.AgoraUtilityHelper.cpp.obj": [
+			"AgoraUEVideoHelper.cpp.obj",
+			"AgoraUtilityHelper.cpp.obj"
+		]
+	}
+}
