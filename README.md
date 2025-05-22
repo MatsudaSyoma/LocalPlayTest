@@ -43,12 +43,17 @@
 
 ## プロジェクトの起動
 
-1. **PixelStreamingClient.uproject** を実行します。
-2. 上部メニューから「ツール」→「Visual Studio を更新」を選択します。
-3. その後、Visual Studio を起動します。
+1. **PixelStreamingClient.uproject** を右クリックします。
+2. **Generate Visual Studio project files** をクリックし、slnファイルを生成します。
+3. slnファイルを起動し、上部のDevelopmentドロップダウンから **Development Editor** を選択します。
+4. 右側の **PixelStreamingClient** を右クリックし、上にあるビルドを選択します。
+5. ビルドが終わったら、 **PixelStreamingClient.uproject** ファイルを開きます。
 
- ![Setup_5](https://github.com/user-attachments/assets/9bb0d1ae-1478-4983-8641-05a09731691f)
+![Setup_13](https://github.com/user-attachments/assets/4cb1b0e0-8129-4b60-906e-d1cefccb1c6f)
 
+![Setup_11](https://github.com/user-attachments/assets/23014a44-6240-4cfc-82f2-f1117811145c)
+
+![Setup_12](https://github.com/user-attachments/assets/e185a4f9-0bf8-4d96-a13b-205d81e090a8)
 
 ---
 
