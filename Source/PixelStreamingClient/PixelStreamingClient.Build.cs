@@ -8,7 +8,7 @@ public class PixelStreamingClient : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG", "Slate", "SlateCore", "InputCore", "EnhancedInput", "PixelStreaming", "PixelStreamingBlueprint" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG", "Slate", "SlateCore", "InputCore", "EnhancedInput", "PixelStreaming", "PixelStreamingBlueprint", "AgoraPlugin" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
