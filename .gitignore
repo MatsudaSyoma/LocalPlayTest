@@ -73,4 +73,17 @@ Plugins/*/Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
-Samples/*
+# すべて無視
+Samples/PixelStreaming/WebServers/**
+
+# cirrus.jsを除外
+!Samples/PixelStreaming/WebServers/SignallingWebServer/
+!Samples/PixelStreaming/WebServers/SignallingWebServer/cirrus.js
+
+# playerを除外
+!Samples/PixelStreaming/WebServers/Frontend/
+!Samples/PixelStreaming/WebServers/Frontend/implementations/
+!Samples/PixelStreaming/WebServers/Frontend/implementations/typescript/
+!Samples/PixelStreaming/WebServers/Frontend/implementations/typescript/src
+!Samples/PixelStreaming/WebServers/Frontend/implementations/typescript/src/player.html
+!Samples/PixelStreaming/WebServers/Frontend/implementations/typescript/src/player.ts
